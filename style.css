@@ -1,0 +1,781 @@
+@font-face {
+  font-family: primary-font;
+  font-weight: normal;
+  src: url(./fonts/iranSans/IRANSans_Medium.ttf);
+}
+
+@font-face {
+  font-family: primary-font;
+  font-weight: bold;
+  src: url(./fonts/iranSans/IRANSans_Bold.ttf);
+}
+
+@font-face {
+  font-family: primary-font;
+  font-weight: lighter;
+  src: url(./fonts/iranSans/IRANSans_Light.ttf);
+}
+
+h3 {
+  font-weight: 800 !important;
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 800 !important;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+* {
+  direction: rtl;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: primary-font;
+  scroll-behavior: smooth;
+}
+
+button {
+  padding: 5px 20px;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #0173b1;
+}
+
+#navbar #nav-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+}
+
+#navbar #nav-container #page-links-logo {
+  align-items: center;
+  display: flex;
+}
+
+#navbar #nav-container #page-links-logo ul {
+  display: flex;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+#navbar #nav-container #page-links-logo ul li {
+  margin: 0px 1vw;
+  list-style: none;
+}
+
+#navbar #nav-container #page-links-logo ul li a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar #nav-container #page-links-logo #logo {
+  height: 50px;
+}
+
+#navbar #nav-container #page-links-logo #logo svg {
+  position: relative;
+  right: -23px;
+  width: 160px;
+  transform: scale(0.7);
+}
+
+#navbar #nav-container button {
+  background-color: #2196f5;
+  color: white;
+  border: 1px solid #2196f5;
+}
+
+#navbar #nav-container #drop-menu {
+  position: absolute;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 2.5px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#navbar #nav-container #drop-menu hr {
+  background-color: #fff;
+  border: none;
+  flex: 1;
+  margin: 2px 0px;
+}
+
+.checked-page {
+  border-bottom: white 2px solid;
+}
+
+#hero {
+  width: 100%;
+  background-color: #2196f5;
+  padding-top: 50px;
+}
+
+#hero #hero-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10px 10px;
+}
+
+#hero #hero-container div {
+  flex: 1;
+}
+
+#hero #hero-container #hero-content {
+  color: white;
+  text-align: center;
+}
+
+#hero #hero-container #hero-content h3 span {
+  color: black;
+  text-shadow: #bfbfbf 0px 1px;
+}
+
+#hero #hero-container #hero-content p {
+  margin: 1vw;
+  font-size: 1rem;
+}
+
+#hero #hero-container #hero-content button {
+  margin-top: 5vw;
+  color: #0173b1;
+  border: 1px solid  white;
+  background-color: white;
+}
+
+#hero #hero-container #hero-avatar {
+  position: relative;
+}
+
+#hero #hero-container #hero-avatar img {
+  width: 80%;
+  float: left;
+}
+
+#hero #hero-container #hero-avatar img:last-child {
+  position: absolute;
+  left: 1vw;
+}
+
+#jahesh, #production, #invest {
+  background-color: #f7f7f7;
+}
+
+#jahesh #jahesh-container, #jahesh #production-container, #jahesh #invest-container, #production #jahesh-container, #production #production-container, #production #invest-container, #invest #jahesh-container, #invest #production-container, #invest #invest-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10px;
+}
+
+#jahesh #jahesh-container div, #jahesh #production-container div, #jahesh #invest-container div, #production #jahesh-container div, #production #production-container div, #production #invest-container div, #invest #jahesh-container div, #invest #production-container div, #invest #invest-container div {
+  flex: 1;
+}
+
+#jahesh #jahesh-container #jahesh-avatar, #jahesh #jahesh-container #production-avatar, #jahesh #jahesh-container #invest-avatar, #jahesh #production-container #jahesh-avatar, #jahesh #production-container #production-avatar, #jahesh #production-container #invest-avatar, #jahesh #invest-container #jahesh-avatar, #jahesh #invest-container #production-avatar, #jahesh #invest-container #invest-avatar, #production #jahesh-container #jahesh-avatar, #production #jahesh-container #production-avatar, #production #jahesh-container #invest-avatar, #production #production-container #jahesh-avatar, #production #production-container #production-avatar, #production #production-container #invest-avatar, #production #invest-container #jahesh-avatar, #production #invest-container #production-avatar, #production #invest-container #invest-avatar, #invest #jahesh-container #jahesh-avatar, #invest #jahesh-container #production-avatar, #invest #jahesh-container #invest-avatar, #invest #production-container #jahesh-avatar, #invest #production-container #production-avatar, #invest #production-container #invest-avatar, #invest #invest-container #jahesh-avatar, #invest #invest-container #production-avatar, #invest #invest-container #invest-avatar {
+  align-self: center;
+}
+
+#jahesh #jahesh-container #jahesh-avatar img, #jahesh #jahesh-container #production-avatar img, #jahesh #jahesh-container #invest-avatar img, #jahesh #production-container #jahesh-avatar img, #jahesh #production-container #production-avatar img, #jahesh #production-container #invest-avatar img, #jahesh #invest-container #jahesh-avatar img, #jahesh #invest-container #production-avatar img, #jahesh #invest-container #invest-avatar img, #production #jahesh-container #jahesh-avatar img, #production #jahesh-container #production-avatar img, #production #jahesh-container #invest-avatar img, #production #production-container #jahesh-avatar img, #production #production-container #production-avatar img, #production #production-container #invest-avatar img, #production #invest-container #jahesh-avatar img, #production #invest-container #production-avatar img, #production #invest-container #invest-avatar img, #invest #jahesh-container #jahesh-avatar img, #invest #jahesh-container #production-avatar img, #invest #jahesh-container #invest-avatar img, #invest #production-container #jahesh-avatar img, #invest #production-container #production-avatar img, #invest #production-container #invest-avatar img, #invest #invest-container #jahesh-avatar img, #invest #invest-container #production-avatar img, #invest #invest-container #invest-avatar img {
+  width: 70%;
+  float: left;
+  margin-left: 2vw;
+}
+
+#jahesh #jahesh-container #jahesh-content, #jahesh #jahesh-container #production-content, #jahesh #jahesh-container #invest-content, #jahesh #production-container #jahesh-content, #jahesh #production-container #production-content, #jahesh #production-container #invest-content, #jahesh #invest-container #jahesh-content, #jahesh #invest-container #production-content, #jahesh #invest-container #invest-content, #production #jahesh-container #jahesh-content, #production #jahesh-container #production-content, #production #jahesh-container #invest-content, #production #production-container #jahesh-content, #production #production-container #production-content, #production #production-container #invest-content, #production #invest-container #jahesh-content, #production #invest-container #production-content, #production #invest-container #invest-content, #invest #jahesh-container #jahesh-content, #invest #jahesh-container #production-content, #invest #jahesh-container #invest-content, #invest #production-container #jahesh-content, #invest #production-container #production-content, #invest #production-container #invest-content, #invest #invest-container #jahesh-content, #invest #invest-container #production-content, #invest #invest-container #invest-content {
+  padding-left: 10%;
+}
+
+#jahesh #jahesh-container #jahesh-content h3, #jahesh #jahesh-container #production-content h3, #jahesh #jahesh-container #invest-content h3, #jahesh #production-container #jahesh-content h3, #jahesh #production-container #production-content h3, #jahesh #production-container #invest-content h3, #jahesh #invest-container #jahesh-content h3, #jahesh #invest-container #production-content h3, #jahesh #invest-container #invest-content h3, #production #jahesh-container #jahesh-content h3, #production #jahesh-container #production-content h3, #production #jahesh-container #invest-content h3, #production #production-container #jahesh-content h3, #production #production-container #production-content h3, #production #production-container #invest-content h3, #production #invest-container #jahesh-content h3, #production #invest-container #production-content h3, #production #invest-container #invest-content h3, #invest #jahesh-container #jahesh-content h3, #invest #jahesh-container #production-content h3, #invest #jahesh-container #invest-content h3, #invest #production-container #jahesh-content h3, #invest #production-container #production-content h3, #invest #production-container #invest-content h3, #invest #invest-container #jahesh-content h3, #invest #invest-container #production-content h3, #invest #invest-container #invest-content h3 {
+  color: #283e4a;
+}
+
+#jahesh #jahesh-container #jahesh-content p, #jahesh #jahesh-container #production-content p, #jahesh #jahesh-container #invest-content p, #jahesh #production-container #jahesh-content p, #jahesh #production-container #production-content p, #jahesh #production-container #invest-content p, #jahesh #invest-container #jahesh-content p, #jahesh #invest-container #production-content p, #jahesh #invest-container #invest-content p, #production #jahesh-container #jahesh-content p, #production #jahesh-container #production-content p, #production #jahesh-container #invest-content p, #production #production-container #jahesh-content p, #production #production-container #production-content p, #production #production-container #invest-content p, #production #invest-container #jahesh-content p, #production #invest-container #production-content p, #production #invest-container #invest-content p, #invest #jahesh-container #jahesh-content p, #invest #jahesh-container #production-content p, #invest #jahesh-container #invest-content p, #invest #production-container #jahesh-content p, #invest #production-container #production-content p, #invest #production-container #invest-content p, #invest #invest-container #jahesh-content p, #invest #invest-container #production-content p, #invest #invest-container #invest-content p {
+  color: #323232;
+  font-weight: normal;
+  margin: 2vw 0px;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+#jahesh #jahesh-container #jahesh-content p span, #jahesh #jahesh-container #production-content p span, #jahesh #jahesh-container #invest-content p span, #jahesh #production-container #jahesh-content p span, #jahesh #production-container #production-content p span, #jahesh #production-container #invest-content p span, #jahesh #invest-container #jahesh-content p span, #jahesh #invest-container #production-content p span, #jahesh #invest-container #invest-content p span, #production #jahesh-container #jahesh-content p span, #production #jahesh-container #production-content p span, #production #jahesh-container #invest-content p span, #production #production-container #jahesh-content p span, #production #production-container #production-content p span, #production #production-container #invest-content p span, #production #invest-container #jahesh-content p span, #production #invest-container #production-content p span, #production #invest-container #invest-content p span, #invest #jahesh-container #jahesh-content p span, #invest #jahesh-container #production-content p span, #invest #jahesh-container #invest-content p span, #invest #production-container #jahesh-content p span, #invest #production-container #production-content p span, #invest #production-container #invest-content p span, #invest #invest-container #jahesh-content p span, #invest #invest-container #production-content p span, #invest #invest-container #invest-content p span {
+  color: #2196f5;
+}
+
+#jahesh #jahesh-container #jahesh-content button, #jahesh #jahesh-container #production-content button, #jahesh #jahesh-container #invest-content button, #jahesh #production-container #jahesh-content button, #jahesh #production-container #production-content button, #jahesh #production-container #invest-content button, #jahesh #invest-container #jahesh-content button, #jahesh #invest-container #production-content button, #jahesh #invest-container #invest-content button, #production #jahesh-container #jahesh-content button, #production #jahesh-container #production-content button, #production #jahesh-container #invest-content button, #production #production-container #jahesh-content button, #production #production-container #production-content button, #production #production-container #invest-content button, #production #invest-container #jahesh-content button, #production #invest-container #production-content button, #production #invest-container #invest-content button, #invest #jahesh-container #jahesh-content button, #invest #jahesh-container #production-content button, #invest #jahesh-container #invest-content button, #invest #production-container #jahesh-content button, #invest #production-container #production-content button, #invest #production-container #invest-content button, #invest #invest-container #jahesh-content button, #invest #invest-container #production-content button, #invest #invest-container #invest-content button {
+  font-size: 1rem;
+  font-weight: 600;
+  float: left;
+  color: white;
+  background-color: #0173b1;
+  border: 1px #0173b1 solid;
+}
+
+#production {
+  background-color: white;
+}
+
+#production #production-container {
+  flex-direction: row-reverse;
+}
+
+#production #production-container #production-avatar img {
+  float: right;
+  width: 70%;
+}
+
+#production #production-container #production-content {
+  padding-left: 30px;
+  padding-right: 10%;
+}
+
+#invest {
+  background-color: #283e4a;
+  width: 100%;
+}
+
+#invest #invest-container {
+  width: 80%;
+  margin: auto;
+}
+
+#invest #invest-container #invest-avatar {
+  flex: 2;
+}
+
+#invest #invest-container #invest-avatar img {
+  width: 100%;
+  margin: 0%;
+}
+
+#invest #invest-container #invest-content {
+  flex: 5;
+  padding-right: 10%;
+}
+
+#invest #invest-container #invest-content h3 {
+  color: #4caf50;
+  text-align: center;
+}
+
+#invest #invest-container #invest-content p {
+  color: white;
+}
+
+#invest #invest-container #invest-content button {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+#fitures #fitures-container {
+  width: 80%;
+  padding: 50px 10px;
+  margin: auto;
+  text-align: center;
+}
+
+#fitures #fitures-container > h3 {
+  color: #283e4a;
+}
+
+#fitures #fitures-container > p {
+  color: #283e4a;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 2vw auto;
+  width: 60%;
+}
+
+#fitures #fitures-container #fiture-cards {
+  display: flex;
+}
+
+#fitures #fitures-container #fiture-cards > div {
+  flex: 1;
+  display: none;
+}
+
+#fitures #fitures-container #fiture-cards > div h4 {
+  font-size: 1.2rem;
+}
+
+#fitures #fitures-container #fiture-cards > div:first-child, #fitures #fitures-container #fiture-cards > div:nth-child(2), #fitures #fitures-container #fiture-cards > div:nth-child(3) {
+  display: block;
+}
+
+#fitures #fitures-container #fiture-slider-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: ltr;
+}
+
+#fitures #fitures-container #fiture-slider-btn div {
+  height: 8px;
+  margin: 1px;
+  border-radius: 4px;
+  background-color: #2196f5;
+  transition: all 0.5s;
+}
+
+#fitures #fitures-container #fiture-slider-btn div:first-child {
+  width: 40px;
+  margin: 5px;
+  background: #388e3c;
+}
+
+#fitures #fitures-container #fiture-slider-btn div:nth-child(2) {
+  width: 20px;
+}
+
+#fitures #fitures-container #fiture-slider-btn div:last-child {
+  width: 10px;
+}
+
+#fitures #fitures-container #mobile-fiture-slider-btn {
+  display: none;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+#fitures #fiture-register {
+  background-color: #4caf50;
+}
+
+#fitures #fiture-register #fiture-register-container {
+  width: 80%;
+  margin: 0px auto;
+  padding: 50px 10%;
+  display: flex;
+}
+
+#fitures #fiture-register #fiture-register-container p {
+  width: 70%;
+  margin-left: 10%;
+  color: white;
+}
+
+#fitures #fiture-register #fiture-register-container button {
+  align-self: flex-end;
+  color: #4caf50;
+  background-color: white;
+  border: 1px solid #4caf50;
+  border-radius: 2px;
+}
+
+.mobile-fiture-slider-btn {
+  transition: all 0.5s;
+  width: 15px;
+  height: 15px;
+  background-color: #2196f5;
+  border-radius: 50%;
+  margin: 1%;
+}
+
+.selected-fiture {
+  transform: scale(1.2);
+  background-color: #4caf50;
+}
+
+.fiture-card {
+  flex: 30%;
+  margin: 3%;
+  box-shadow: rgba(20, 144, 244, 0.4) 0px 0px 12px 3px;
+  border-color: #cacaca;
+  padding: 40px 20px;
+  height: calc(500px - 12vw);
+  transition: all 0.5s;
+}
+
+.fiture-card h4 {
+  color: #0173b1;
+  margin: 1vw 0px;
+}
+
+.fiture-card img {
+  width: 30%;
+}
+
+.fiture-card p {
+  font-size: 1rem;
+}
+
+.fiture-card:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1200px) {
+  .fiture-card {
+    height: 350px;
+  }
+}
+
+#video {
+  background-color: #f7f7f7;
+}
+
+#video #video-container {
+  padding: 50px 0px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+#video #video-container #video-avatar {
+  width: 40%;
+  position: relative;
+}
+
+#video #video-container #video-avatar video {
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 5px #afafaf;
+  width: 100%;
+}
+
+#video #video-container #video-content {
+  margin-right: 5vw;
+  flex: 3;
+}
+
+#video #video-container #video-content h3 {
+  color: #283e4a;
+}
+
+#video #video-container #video-content p {
+  color: #323232;
+  margin: 2vw 0px;
+  font-weight: normal;
+}
+
+#video #video-container #video-content button {
+  color: white;
+  background-color: #0173b1;
+  border: 1px solid #0173b1;
+  float: left;
+  margin-top: 5vw;
+}
+
+#advantages {
+  background-color: #dde4e8;
+}
+
+#advantages #advantages-container {
+  width: 80%;
+  margin: auto;
+  padding: 50px 10px;
+}
+
+#advantages #advantages-container > h3 {
+  color: #283e4a;
+  text-align: center;
+}
+
+#advantages #advantages-container > p {
+  text-align: center;
+  padding: 0px 20%;
+  margin: 2vw 0px;
+  color: #323232;
+}
+
+#advantages #advantages-container #advantage-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#advantages #advantages-container #advantage-tab ul {
+  z-index: 1;
+  position: relative;
+  right: 10px;
+}
+
+#advantages #advantages-container #advantage-tab ul li {
+  background-color: #388e3c;
+  color: white;
+  padding: 10px 20px;
+  opacity: 0.7;
+  list-style: none;
+  margin: 10px;
+  cursor: context-menu;
+}
+
+#advantages #advantages-container #advantage-tab ul li:first-child {
+  font-weight: bold;
+  opacity: 1;
+}
+
+#advantages #advantages-container #advantage-tab #mobile-style {
+  display: none;
+}
+
+#advantages #advantages-container #advantage-tab #text-box {
+  position: relative;
+  direction: ltr;
+  width: 70%;
+  margin-top: 30px;
+  height: 484px;
+  display: flex;
+  flex-direction: row-reverse;
+  background: white;
+  padding: 30px 30px 30px 20px;
+  box-shadow: 0px 0px 15px 5px #afafaf;
+}
+
+#advantages #advantages-container #advantage-tab #text-box > div {
+  margin-left: 20px;
+  display: flex;
+  float: right;
+  transition: all 0.5s;
+}
+
+#advantages #advantages-container #advantage-tab #text-box > div img {
+  width: 15%;
+  margin: 12% 5% auto;
+}
+
+#advantages #advantages-container #advantage-tab #text-box > div div h4 {
+  color: #283e4a;
+}
+
+#advantages #advantages-container #advantage-tab #text-box > div div p {
+  margin: 2vw 0px;
+  padding-left: 10%;
+  color: #5b5b5b;
+}
+
+#advantages #advantages-container #advantage-tab #text-box #advantage1 {
+  position: absolute;
+  transform: scale(0);
+}
+
+#advantages #advantages-container #advantage-tab #text-box #advantage2 {
+  position: absolute;
+  transform: scale(0);
+}
+
+#advantages #advantages-container #advantage-tab #text-box #advantage3 {
+  position: absolute;
+  transform: scale(0);
+}
+
+#advantages #advantages-container #advantage-tab #text-box #advantage4 {
+  position: absolute;
+  transform: scale(0);
+}
+
+#advantages #advantages-container #advantage-tab #text-box #advantage5 {
+  position: absolute;
+  transform: scale(0);
+}
+
+#advantages #advantages-container #advantage-tab #text-box #paginations {
+  flex-direction: column;
+  position: absolute;
+  left: 10px;
+  top: 30%;
+}
+
+#advantages #advantages-container #advantage-tab #text-box #paginations div {
+  transition: all 0.5s;
+  width: 10px;
+  height: 10px;
+  margin: 50%;
+  position: relative;
+  top: 30%;
+  border-radius: 50%;
+  background-color: #388e3c;
+  opacity: 0.8;
+}
+
+.focused-pagination {
+  transform: scale(1.5);
+  margin: 70% 50%;
+  opacity: 1 !important;
+}
+
+.focused-advantage {
+  position: relative;
+  transform: scale(1) !important;
+}
+
+#footer {
+  background: #2196f5;
+  color: white;
+}
+
+#footer #footer-container {
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+#footer #footer-container #logo svg {
+  width: 160px;
+}
+
+#footer #footer-container #footer-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer #footer-container #footer-middle p {
+  font-size: 1rem;
+}
+
+#footer #footer-container #footer-middle #contact-us {
+  width: 50%;
+}
+
+#footer #footer-container #footer-middle #contact-us p {
+  position: relative;
+  margin: 20px 0px;
+}
+
+#footer #footer-container #footer-middle #contact-us p:nth-child(2) {
+  margin-right: 5%;
+}
+
+#footer #footer-container #footer-middle #contact-us p:nth-child(3) {
+  margin-right: 10%;
+}
+
+#footer #footer-container #footer-middle #contact-us p:last-child {
+  margin-right: 5%;
+}
+
+#footer #footer-container #footer-middle #contact-us img {
+  position: absolute;
+  right: 95px;
+}
+
+#footer #footer-container #footer-middle #contact-us img:last-child {
+  right: 125px;
+}
+
+#footer #footer-container #footer-middle #request {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer #footer-container #footer-middle #request form {
+  position: relative;
+}
+
+#footer #footer-container #footer-middle #request form > div {
+  transition: opacity 0.5s;
+  opacity: 0;
+  bottom: 50%;
+  width: 100%;
+  position: absolute;
+  border-radius: 6px;
+}
+
+#footer #footer-container #footer-middle #request form > div h5 {
+  padding: 0px  5px;
+  background-color: red;
+  border-radius: 6px 6px 0px 0px;
+  text-align: center;
+}
+
+#footer #footer-container #footer-middle #request form > div p {
+  padding: 5px  5px;
+  background-color: white;
+  border-radius: 0px 0px 6px 6px;
+  color: #323232;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#footer #footer-container #footer-middle #request form > p {
+  text-align: center;
+}
+
+#footer #footer-container #footer-middle #request form > input {
+  direction: ltr;
+  margin: 20px auto;
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+
+#footer #footer-container #footer-middle #request form > input:focus {
+  outline: none;
+}
+
+#footer #footer-container #footer-middle #request form > button {
+  width: 100%;
+  background-color: white;
+  color: #2196f5;
+  border: 1px solid white;
+  font-weight: 600;
+}
+
+#footer #footer-container #footer-center {
+  text-align: center;
+}
+
+#footer #copyright {
+  background-color: #283e4a;
+}
+
+#footer #copyright p {
+  padding: 20px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+#footer #copyright #copyright-container {
+  width: 80%;
+  margin: auto;
+}
+
+@media (min-width: 1020px) {
+  #footer-container {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,319 @@
+@media (max-width: 1014px) and (min-width: 770px) {
+  #advantages-container > p {
+    padding: 0px 10vw !important;
+  }
+  #advantages-container #advantage-tab ul li {
+    font-size: 1rem;
+  }
+  #advantages-container #advantage-tab #text-box {
+    padding: 20px 20px 20px 10px !important;
+    height: 370px !important;
+  }
+  #advantages-container #advantage-tab #text-box h4 {
+    font-size: 1rem;
+  }
+  #advantages-container #advantage-tab #text-box p {
+    font-size: 0.8rem;
+  }
+  #footer #footer-container #footer-middle #request {
+    width: 30%;
+  }
+}
+
+@media (max-width: 770px) {
+  #navbar {
+    width: 101%;
+    left: 0;
+  }
+  #navbar #nav-container {
+    width: 90%;
+  }
+  #navbar #nav-container button {
+    position: absolute;
+    left: 60px;
+  }
+  #navbar #nav-container #page-links-logo ul {
+    transform: scale(0);
+    position: absolute;
+    flex-direction: column;
+    width: calc(100vw + 1px);
+    height: fit-content;
+    left: -6%;
+    top: 50px;
+    background-color: rgba(13, 23, 41, 0.8);
+    padding: 5px 10px 5px 10px;
+  }
+  #navbar #nav-container #page-links-logo ul li {
+    text-align: center;
+  }
+  #navbar #nav-container #page-links-logo ul li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  #navbar #nav-container #drop-menu {
+    display: flex;
+  }
+  .checked-page {
+    border: none;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.8rem !important;
+    font-weight: normal !important;
+  }
+  h3, h4 {
+    font-size: 1rem;
+  }
+  #hero-container {
+    flex-direction: column;
+  }
+  #hero-container #hero-avatar {
+    display: flex !important;
+    margin-top: 20px !important;
+    width: 70%;
+  }
+  #hero-container #hero-avatar img {
+    position: relative;
+    right: 35%;
+  }
+  #hero-container #hero-avatar img:last-child {
+    left: 10% !important;
+    bottom: 0%;
+  }
+  #jahesh-container, #invest-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #jahesh-container #jahesh-avatar, #jahesh-container #invest-avatar, #invest-container #jahesh-avatar, #invest-container #invest-avatar {
+    display: flex;
+    justify-content: center;
+  }
+  #jahesh-container #jahesh-avatar img, #jahesh-container #invest-avatar img, #invest-container #jahesh-avatar img, #invest-container #invest-avatar img {
+    float: none;
+    width: 60%  !important;
+    margin-bottom: 30px !important;
+  }
+  #jahesh-container #jahesh-content, #jahesh-container #invest-content, #invest-container #jahesh-content, #invest-container #invest-content {
+    padding-left: 0px !important;
+    display: flex;
+    flex-direction: column;
+  }
+  #production-container {
+    flex-direction: column-reverse !important;
+    text-align: center;
+  }
+  #production-container #production-content {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: column;
+  }
+  #production-container #production-avatar {
+    display: flex;
+    justify-content: center;
+  }
+  #production-container #production-avatar img {
+    float: none;
+    width: 60%  !important;
+    margin-top: 30px !important;
+  }
+  #video-container {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  #video-container #video-avatar {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80% !important;
+  }
+  #video-container #video-avatar video {
+    margin: auto !important;
+    margin-bottom: 30px !important;
+  }
+  #video-container #video-content {
+    padding-left: 0px !important;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px !important;
+  }
+  #video-container button {
+    margin-top: 2vw !important;
+  }
+  #advantages-container #advantage-tab ul {
+    min-width: 145px !important;
+  }
+  #advantages-container #advantage-tab ul li {
+    font-size: 0.8rem;
+    padding: 5px 10px !important;
+  }
+  #advantages-container #advantage-tab #text-box {
+    padding: 20px 10px 20px 10px !important;
+    height: calc(550px - 10vw) !important;
+  }
+  #footer #footer-container #footer-middle #request {
+    width: 30%;
+  }
+  #footer #footer-container #footer-middle #request input {
+    height: 25px;
+  }
+}
+
+@media (max-width: 770px) and (min-width: 600px) {
+  #fiture-cards {
+    min-width: 490px;
+    margin: auto !important;
+  }
+  .fiture-card {
+    margin-bottom: 30px;
+    height: calc(480px - 12vw);
+  }
+  .fiture-card h4 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 570px) {
+  button {
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+  }
+  #advantages-container p {
+    padding: 0px 5% !important;
+  }
+  #advantages-container #advantage-tab {
+    flex-direction: column;
+  }
+  #advantages-container #advantage-tab #text-box {
+    right: 0px;
+  }
+  #advantages-container #advantage-tab #text-box > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #advantages-container #advantage-tab #text-box > div img {
+    margin: 0 5% auto !important;
+  }
+  #advantages-container #advantage-tab #text-box > div h4, #advantages-container #advantage-tab #text-box > div p {
+    text-align: center;
+  }
+  #advantages-container #advantage-tab #paginations {
+    display: none !important;
+  }
+  #advantages-container #advantage-tab ul {
+    display: none;
+  }
+  #advantages-container #advantage-tab #mobile-style {
+    right: 0px !important;
+    display: flex !important;
+  }
+  #advantages-container #advantage-tab #text-box {
+    width: 80% !important;
+    padding: 20px 10px 20px 10px !important;
+    height: calc(650px - 20vw) !important;
+    margin-top: 0px !important;
+  }
+  #footer #footer-container #footer-center img {
+    width: 30%;
+  }
+  #footer #footer-container #footer-top #logo {
+    width: fit-content;
+    margin: auto;
+  }
+  #footer #footer-container #footer-middle #request {
+    width: 40%;
+  }
+  #footer #footer-container #contact-us p:last-child img {
+    right: 75px !important;
+  }
+  #footer #footer-container #contact-us p:last-child img:last-child {
+    right: 100px !important;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 771px) {
+  #fiture-register-container button {
+    width: 30% !important;
+  }
+}
+
+@media (max-width: 770px) and (min-width: 601px) {
+  #fiture-register-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 10% !important;
+  }
+  #fiture-register-container P {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 30px !important;
+    margin: auto;
+  }
+  #fiture-register-container button {
+    width: 100%;
+    align-self: center !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #fiture-register-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 10% !important;
+  }
+  #fiture-register-container P {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 30px !important;
+    margin: auto;
+  }
+  #fiture-register-container button {
+    width: 100%;
+    align-self: center !important;
+  }
+  #fiture-slider-btn {
+    display: none !important;
+  }
+  #mobile-fiture-slider-btn {
+    margin-top: 20px;
+    display: flex !important;
+  }
+  .fiture-card {
+    display: none !important;
+    flex: none !important;
+    width: 60%;
+    min-width: 190px;
+    margin: 30px auto 10px;
+    padding: 20px 20px;
+    height: calc(350px - 12vw) !important;
+  }
+  .fiture-card h4 {
+    font-size: 1rem;
+  }
+  .fiture-card img {
+    width: 20%;
+  }
+  .fiture-card:nth-child(1) {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1014px) and (min-width: 771px) {
+  #contact-us p:last-child img {
+    right: 90px !important;
+  }
+  #contact-us p:last-child img:last-child {
+    right: 115px !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  #footer-container {
+    padding-left: 50% !important;
+    padding-right: 50% !important;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

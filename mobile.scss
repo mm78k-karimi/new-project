@@ -1,0 +1,387 @@
+
+@media (max-width: 1014px) and (min-width:770px) {
+  #advantages-container {
+    >p {
+      padding: 0px 10vw !important;
+    }
+    #advantage-tab{
+      ul {
+        li {
+          font-size: 1rem;
+        }
+      }
+      #text-box {
+        padding: 20px 20px 20px 10px !important;
+        height: 370px !important;
+        h4{
+          font-size: 1rem;
+        }
+        p{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  #footer {
+    #footer-container {
+      #footer-middle{
+        #request {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width : 770px){
+
+  #navbar{
+    width: 101%;
+    left: 0;
+    #nav-container{
+      width: 90%;
+      button {
+        position: absolute;
+        left: 60px;
+      }
+      #page-links-logo {
+        ul {
+          transform: scale(0);
+          position: absolute;
+          flex-direction: column;
+          width:calc(100vw + 1px);
+          height: fit-content;
+          left: -6%;
+          top: 50px;
+          background-color: rgba(13 , 23 , 41 , 0.8);
+          padding: 5px 10px 5px 10px;
+          li{
+            text-align: center;
+            a{
+              font-size: 1.2rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      #drop-menu{
+        display: flex;
+      }
+    }
+  }
+  .checked-page {
+    border: none;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+
+  p{
+    font-size: 0.8rem !important;
+    font-weight: normal !important;
+  }
+  h3 , h4 {
+    font-size: 1rem;
+  }
+
+  #hero-container {
+    flex-direction: column;
+    #hero-avatar {
+      display: flex !important;
+      margin-top: 20px !important;
+      width: 70%;
+
+      img {
+        position: relative;
+        right: 35%;
+        &:last-child {
+          left: 10% !important;
+          bottom: 0%;
+        }
+      }
+    }
+  }
+
+
+  #jahesh-container,#invest-container {
+    flex-direction: column ;
+    text-align: center;
+
+    #jahesh-avatar , #invest-avatar {
+      display: flex;
+      justify-content: center;
+      img {
+        float: none ;
+        width: 60%  !important;
+        margin-bottom: 30px !important;
+      }
+    }
+    
+    #jahesh-content , #invest-content{
+      padding-left: 0px !important;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  #production-container {
+    flex-direction: column-reverse !important;
+    text-align: center;
+    #production-content {
+      padding: 0px !important;
+      display: flex;
+      flex-direction: column;
+    }
+    #production-avatar {
+      display: flex;
+      justify-content: center;
+      img {
+        float: none ;
+        width: 60%  !important;
+        margin-top: 30px !important;
+      }
+    }
+  }
+
+  
+  #video-container{
+    flex-direction: column !important;
+    text-align: center;
+
+    #video-avatar {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      width: 80% !important;
+      video {
+        margin: auto !important;
+        margin-bottom: 30px !important;
+      }
+    }
+    
+    #video-content{
+      padding-left: 0px !important;
+      display: flex;
+      flex-direction: column;
+      margin-right: 0px !important;
+    }
+    button {
+      margin-top: 2vw !important;
+    }
+  }
+  #advantages-container {
+    #advantage-tab{
+      ul{
+        min-width: 145px !important;
+        li{
+          font-size: 0.8rem;
+          padding: 5px 10px !important;
+        }
+      }
+      #text-box {
+        padding: 20px 10px 20px 10px !important;
+        height: calc(550px - 10vw) !important;
+      }
+    }
+    
+  }
+
+  #footer {
+    #footer-container {
+      #footer-middle{
+        #request {
+          width: 30%; 
+          input {
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width : 770px) and (min-width:600px) { 
+  #fiture-cards {
+    min-width: 490px;
+    margin: auto !important;
+  }
+  .fiture-card {
+    margin-bottom: 30px;
+    height: calc(480px - 12vw);
+    h4{
+      font-size: 1rem !important;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  button {
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+  }
+  #advantages-container {
+    p {
+      padding: 0px 5% !important;
+    }
+    #advantage-tab{
+      
+        #text-box{
+          right: 0px;
+        >div{
+          flex-direction: column;
+          align-items: center;
+          img {
+            margin: 0 5% auto !important;
+          }
+          h4 , p {
+            text-align: center;
+          }
+        }
+      }
+      #paginations {
+        display: none!important;
+      }
+      flex-direction: column;
+      ul{
+        display: none;
+      }
+      #mobile-style{
+        right: 0px !important;
+        display: flex !important;
+      }
+      #text-box {
+        width: 80% !important;
+        padding: 20px 10px 20px 10px !important;
+        height: calc(650px - 20vw) !important;
+        margin-top: 0px !important;
+      }
+    }
+  }
+
+  #footer{
+    #footer-container {
+      #footer-center {
+        img {
+          width: 30%;
+        }
+      }
+      #footer-top {
+        #logo {
+          width: fit-content;
+          margin: auto;
+        }
+      }
+      #footer-middle {
+        #request {
+          width: 40%;
+        }
+      }
+      #contact-us {
+        p:last-child {
+          img{
+            right: 75px !important;
+            &:last-child {
+              right: 100px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1000px ) and (min-width: 771px) {
+  #fiture-register-container {
+    button {
+      width: 30% !important;
+    }
+  }
+}
+
+@media (max-width:770px) and (min-width: 601px){
+  
+  #fiture-register-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 10% !important;
+    P{
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-bottom: 30px !important;
+      margin: auto;
+    }
+    button {
+      width: 100%;
+      align-self: center !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #fiture-register-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 10% !important;
+    P{
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-bottom: 30px !important;
+      margin: auto;
+    }
+    button {
+      width: 100%;
+      align-self: center !important;
+    }
+  }
+  #fiture-slider-btn{
+    display: none !important;
+  }
+  #mobile-fiture-slider-btn{
+    margin-top: 20px;
+    display: flex !important;
+  }
+
+  .fiture-card {
+    display: none !important;
+    flex: none !important;
+    width: 60%;
+    min-width:190px ;
+    margin: 30px auto 10px;
+    padding: 20px 20px ;
+    height: calc(350px - 12vw) !important;
+    h4 {
+      font-size: 1rem ;
+    }
+    img{
+      width: 20%;
+    }
+    &:nth-child(1) {
+      display: block !important;
+    }
+  }
+}
+@media (max-width : 1014px) and (min-width : 771px) {
+  #contact-us {
+    p{
+      &:last-child {
+        img {
+          right: 90px !important;
+          &:last-child {
+            right: 115px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width : 1000px) {
+  #footer-container {
+    padding-left: 50% !important;
+    padding-right: 50% !important;
+  }
+}
